@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amith Kadagodu | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar d-flex align-items-center justify-content-between border-bottom nav-font">
+
+        <!-- My Brand Design -->
+        <div class="brand d-flex align-items-center gap-2 mt-3 mb-3">
+            <span class="badge ak-badge p-3 ms-3 fs-4 fw-normal rounded-4">AK</span>
+
+            <div>
+                <div class="fs-5 fw-semibold lh-1">Amith Kadagodu</div>
+                <div class="fs-6 fw-normal text-secondary lh-1">Data Analyst</div>
+            </div>
+        </div>
+        
+        <!-- Navigation Menus -->
+        <div class="nav-menu">
+            <ul class="nav justify-content-end gap-3">
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" href="#">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" href="#">Certification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" href="#">Journey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-color fw-normal" href="#">Contact</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link text-color fw-normal resume-btn rounded-3" href="#">Resume</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="main">
+
+        <!--Main Headline Part-->
+        <section class="overview d-flex flex-column">
+            <div class="text-color fw-semibold head-note">Data Analyst · Bengaluru, Karnataka</div>
+            <div>
+                <p class="headline fw-semibold">Data Analyst with 3+ years turning large-scale data products into decisions people can act on.</p>
+                <div class="w-50 fs-4 fw-semibold text-body-secondary sub-note">An MSc in Data Science graduate from Manipal Academy of Higher Education, building on a background in managing data quality and digital data products at scale.</div>
+            </div>
+        </section>
+
+        <!--Button part-->
+        <section class="card-section">
+
+            <div class="vg-buttons d-flex gap-2">
+            <div class="vjr card-buttons d-flex justify-content-center align-items-center rounded-3">View my Journey</div> <div class="git card-buttons d-flex justify-content-center align-items-center rounded-3">Get in touch</div>
+            </div>
+        </section>
+
+        <!--Skill Card Part-->
+        <section class="skill-card d-flex justify-content-center">
+            <div class="main-card position-relative d-flex justify-content-center align-items-center rounded-4">
+                        <!-- Center -->
+                        <div class="display-3 fw-semibold text-color">AK</div>
+                        <!-- Python -->
+                        <div class="skill-badge position-absolute top-0 end-0 translate-middle bg-white rounded-pill shadow-sm px-3 py-2 fw-semibold">Python</div>
+                        <!-- SQL -->
+                        <div class="skill-badge position-absolute top-50 start-0 translate-middle bg-white rounded-pill shadow-sm px-3 py-2 fw-semibold">SQL</div>
+                        <!-- Power BI -->
+                        <div class="skill-badge position-absolute bg-white rounded-pill px-3 py-2 shadow-sm power-bi fw-semibold">Power BI</div>
+            </div>
+        </section>
+
+        <section class="major-stats d-flex align-items-center flex-column gap-5 justify-content-center">
+
+            <div class="d-flex gap-5">
+                <div class="main-card position-relative d-flex flex-column justify-content-center align-items-center rounded-4 gap-3"><svg class="text-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="50px" height="50px" class="bi bi-clock" viewBox="0 0 16 16"><path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/></svg><div class="display-5 fw-semibold">3</div><div>Years in Data Ops</div></div>
+            
+                <div class="main-card position-relative d-flex flex-column justify-content-center align-items-center rounded-4 gap-3"><svg class="text-color" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16"><path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/><path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/></svg><div class="display-5 fw-semibold">10+</div><div>Certifications</div></div>
+            </div>
+
+            <div class="d-flex gap-5">
+                <div class="main-card position-relative d-flex flex-column justify-content-center align-items-center rounded-4 gap-3"><svg class="text-color" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16"><path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/></svg><div class="display-5 fw-semibold">16+</div><div>Core Skills</div></div>
+            
+                <div class="main-card position-relative d-flex flex-column justify-content-center align-items-center rounded-4 gap-3"><svg class="text-color" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/></svg><div class="display-5 fw-semibold">3</div><div>Languages Spoken</div></div>
+            </div>
+
+        </section>
+
+        <!--About Section-->
+        <section class="about-section d-flex flex-column gap-4 align-items-center">
+            <div class="text-color fs-3 fw-semibold">About</div>
+            <div class="fs-1 fw-semibold">A bit more about my path</div>
+            <div>
+                <ul class="list-unstyled d-flex flex-column gap-3">
+                    <li class="vjr card-buttons list-buttons rounded-4 text-center">Background</li>
+                    <li class="git card-buttons list-buttons rounded-4 text-center">What I do</li>
+                    <li class="git card-buttons list-buttons rounded-4 text-center">Why Data Science</li>
+                </ul>
+            </div>
+            <div class="exp-body text-secondary fs-5 fw-medium">
+                <p>
+                    I started out as a Site Civil Engineer, managing site operations, quantity estimation, and project coordination. Looking for more analytical work, I moved into content and data analyst roles at Thomson Reuters' FindLaw platform, and I'm now completing an MSc in Data Science at Manipal Academy of Higher Education.
+                </p>
+                <p>
+                    I manage the end-to-end administration and data quality of legal directory products across Thomson Reuters' FindLaw platform — evaluating and validating digital data products for compliance and accuracy at scale.
+                </p>
+                <p>
+                   I'm drawn to data science because it turns operational data into decisions — building dashboards, running statistical analysis, and modeling predictions, rather than just maintaining data. 
+                </p>
+            </div>
+        </section>
+
+        <!--Skills Section-->
+        <section class="about-section">
+            <div class="d-flex flex-column gap-4 align-items-center">
+                <div class="text-color fs-3 fw-semibold">Skills</div>
+                <div class="fs-1 fw-semibold">What I bring to the table</div>
+            </div>
+            <div class="skill-banner-cards d-flex flex-column gap-4">
+                <span class="text-secondary fs-5 fw-semibold">Analytics & Industry Knowledge</span>
+                <div class="d-flex gap-5">
+                    <div class="git card-buttons rounded-4">Data Analysis</div>
+                    <div class="git card-buttons rounded-4">Statistical Analysis</div>
+                    <div class="git card-buttons rounded-4">Predictive Analysis</div>
+                    <div class="git card-buttons rounded-4">Machine Learning</div>
+                    <div class="git card-buttons rounded-4">Data Modeling</div>
+                    <div class="git card-buttons rounded-4">Data Cleaning</div>
+                    <div class="git card-buttons rounded-4">Business Analytics</div>
+                </div>
+            </div>
+            <div class="skill-banner-cards d-flex flex-column gap-4">
+                <span class="text-secondary fs-5 fw-semibold">Tools & Technologies</span>
+                <div class="d-flex gap-5">
+                    <div class="git card-buttons rounded-4">Python</div>
+                    <div class="git card-buttons rounded-4">SQL</div>
+                    <div class="git card-buttons rounded-4">My SQL</div>
+                    <div class="git card-buttons rounded-4">PostgreSQL</div>
+                    <div class="git card-buttons rounded-4">Microsoft Power BI</div>
+                    <div class="git card-buttons rounded-4">ETL</div>
+                    <div class="git card-buttons rounded-4">Business Intelligence</div>
+                    <div class="git card-buttons rounded-4">Dashboard Building</div>
+                    <div class="git card-buttons rounded-4">Data Visualization</div>
+                </div>
+            </div>
+        </section>
+
+        <!--Continuous Learning-->
+        <section class="about-section d-flex flex-column align-items-center gap-4">
+            <div class="text-color fs-3 fw-semibold">Certifications</div>
+            <div class="fs-1 fw-semibold">Continuous Learning</div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">1</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Python for Everybody Specialization</li>
+                            <li>Issuer: University of Michigan</li>
+                            <li>Issued: April 2025</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">2</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Ask Questions to Make Data-Driven Decisions</li>
+                            <li>Issuer: Google</li>
+                            <li>Issued: January 2025</li>
+                        </ul>
+                    </div>
+                </div>              
+                
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">3</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Foundations: Data, Data, Everywhere</li>
+                            <li>Issuer: Google</li>
+                            <li>Issued: January 2025</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">4</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Building Statistical Models in R: Linear Regression</li>
+                            <li>Issuer: Coursera Project Network</li>
+                            <li>Issued: May 2024</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">5</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Data Manipulation and Management using MYSQL Workbench</li>
+                            <li>Issuer: Coursera Project Network</li>
+                            <li>Issued: May 2024</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">6</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>FIFA20 Data Exploration using Python</li>
+                            <li>Issuer: Deprecated Guided Projects</li>
+                            <li>Issued: May 2024</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">7</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Google IT Support</li>
+                            <li>Issuer: Google</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">8</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Java Programming: Arrays, Lists, and Structured Data</li>
+                            <li>Issuer: Duke University</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">9</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Java Programming: Solving Problems with Software</li>
+                            <li>Issuer: Duke University</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="d-flex flex-column gap-2 certi-lst">
+                <div class="d-flex gap-3">
+                    <div class="certi-effect-number rounded-4 d-flex align-items-center justify-content-center">10</div>
+                    <div class=" certi-effect-entry rounded-4 align-items-center p-2">
+                        <ul class="list-unstyled mb-0">
+                            <li>Programming Foundations with JavaScript, HTML and CSS</li>
+                            <li>Issuer: Duke University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex flex-column gap-5 align-items-center">
+
+            <div class="about-section d-flex flex-column align-items-center gap-4">
+                <div class="text-color fs-3 fw-semibold">Journey</div>
+                <div class="fs-1 fw-semibold">From Civil Engineering to Data</div>
+            </div>
+
+            <div class="progress-section position-relative d-flex flex-column gap-5">
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">Dec 2025 — Present  Experience</div>
+                        <div class="fs-4 fw-normal">Associate Content Analyst — FindLaw, a part of Internet Brands</div>
+                        <div class="text-body-secondary fs-5">Managing end-to-end administration and data quality of legal directory products across Thomson Reuters' FindLaw platform.</div>
+                    </div>
+                </div>
+            
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">2023 — 2026  Education</div>
+                        <div class="fs-4 fw-normal">MSc, Data Science — Manipal Academy of Higher Education</div>
+                    </div>
+                </div>
+                
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">Aug 2023 — Dec 2025  Experience</div>
+                        <div class="fs-4 fw-normal">Associate Content Analyst — Thomson Reuters / FindLaw</div>
+                        <div class="text-body-secondary fs-5">Managing end-to-end administration and data quality of legal directory products across Thomson Reuters' FindLaw platform.</div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">Apr 2023 — Aug 2023  Experience</div>
+                        <div class="fs-4 fw-normal">Trainee Content Analyst — Thomson Reuters</div>
+                        <div class="text-body-secondary fs-5">Evaluated and validated digital data products across FindLaw directory products for compliance and accuracy.</div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">Jan 2023 — Mar 2023  Experience</div>
+                        <div class="fs-4 fw-normal">Estimation Intern — GlobalFair</div>
+                        <div class="text-body-secondary fs-5">Analyzed project datasets to support budgeting and procurement decisions using Planswift and Bluebeam.</div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">May 2021 — May 2022  Experience</div>
+                        <div class="fs-4 fw-normal">Site Civil Engineer — Associated Engineering Consultants</div>
+                        <div class="text-body-secondary fs-5">Managed site operations, quantity estimation, technical documentation, and project coordination.</div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-5 align-items-center">
+                    
+                    <div class="position-relative z-1"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="30px" height="30px" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/></svg></div>
+                    
+                    <div class="d-flex flex-column justify-content-center exp-entries p-2 rounded-4">
+                        <div class="text-color fs-6 fw-semibold">2017 — 2021  Education</div>
+                        <div class="fs-4 fw-normal">BE, Civil Engineering — KVG College of Engineering, Sullia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-flex align-items-center justify-content-center contact-me">
+
+            <div>
+                <div class="text-color fs-3 fw-semibold">Contact</div>
+                <div class="fs-1 fw-semibold">Let's talk data.</div>
+                <div class="w-50 fs-4 fw-semibold text-body-secondary sub-note">Open to data analyst and data science opportunities in Bengaluru — on-site, hybrid, or remote.</div>
+            </div>
+
+            <div class="d-flex gap-2 ">
+                <div class="git card-buttons d-flex justify-content-center align-items-center rounded-3 gap-2 text-color"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg><div>Email</div></div>
+                
+                <div class="git card-buttons d-flex justify-content-center align-items-center rounded-3 gap-2 text-color"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg><div>LinkedIn</div></div>
+                
+                <div class="git card-buttons d-flex justify-content-center align-items-center rounded-3 gap-2 text-color"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg><div>GitHub</div></div>
+                
+                <div class="vjr card-buttons d-flex justify-content-center align-items-center rounded-3 gap-2 text-color"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/></svg><div>Resume</div></div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer class="footer d-flex align-items-center justify-content-center gap-2 text-color">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/></svg>
+        <div>2026 Amith Kadagodu · Built with Flask & Bootstrap</div>
+    </footer>
+
+</body>
+</html>

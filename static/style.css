@@ -1,0 +1,218 @@
+.nav-font{
+    font-family: 'Sora', sans-serif
+}
+
+.main{
+    font-family: 'Sora', sans-serif
+}
+.ak-badge{
+    background-color: #438B7E;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+     
+}
+
+.text-color{
+    color: #438B7E;
+}
+
+.nav-menu a {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.nav-menu a:hover{
+    color: aliceblue;
+    background-color: #438B7E;
+    transform: scale(1.05);
+}
+
+.nav-menu .resume-btn {
+    padding: 8px 16px;
+    border: 2px solid #438B7E;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #438B7E;
+    color: aliceblue;
+}
+
+.nav-menu .resume-btn:hover{
+    transform: scale(1.05);
+}
+
+.overview{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.head-note{
+    padding-top: 30px;
+}
+
+.headline{
+    font-size: 55px;
+    line-height: 1.0;
+    padding-top: 30px;
+    
+}
+
+.sub-note{
+    padding-top: 30px;
+}
+
+.card-section{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.card-buttons{
+    border: 2px solid transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vjr{
+    border: 2px solid #438B7E;
+    background-color: #438B7E;
+    color: aliceblue;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+                
+}
+
+.vjr:hover{
+    transform: scale(1.05);
+}
+
+.git{
+    border: 1px solid rgb(215, 213, 213);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;  
+}
+
+.git:hover{
+    transform: scale(1.05);
+}
+
+.skill-card{
+    padding-top: 50px;
+}
+.main-card {
+    width: 800px;
+    height: 400px;
+    background-color: #edf5f3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease; 
+}
+
+.main-card:hover{
+    transform: scale(1.05);
+}
+
+.power-bi{
+    transform: translate(180%, 525%);
+}
+
+.skill-badge {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.major-stats{
+    padding-top: 50px;
+}
+
+.about-section{
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+.list-buttons{
+    width: 300px;
+    height: 50px;
+}
+
+.exp-body{
+    width: 90%;
+}
+
+.skill-banner-cards{
+    padding-top: 30px;
+    padding-left: 90px; 
+}
+
+.certi-lst{
+    width: 90%;
+}
+
+.certi-entries{
+    border: 2px solid transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding-left: 10px;
+    justify-items: center;
+}
+
+.certi-effect-entry{
+    width: 1600px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease; 
+}
+
+.certi-effect-entry:hover{
+    transform: scale(1.01);
+}
+
+.certi-effect-number{
+    color: aliceblue;
+    background-color: #438B7E;
+    width: 45px;
+    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease; 
+}
+
+.certi-effect-number:hover{
+    transform: translateY(-2px);
+
+}
+
+.exp-entries{
+    width: 1350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.exp-entries:hover{
+    transform: scale(1.05);
+}
+
+.contact-me{
+    background-color: #F5F7F8;
+    margin-top: 80px;
+    padding-top: 50px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.15);
+    padding-bottom: 50px;
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

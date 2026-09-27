@@ -1,0 +1,254 @@
+{% extends "base.html" %}
+
+{% block title %} Admin Dashboard | Amith Kadagodu {% endblock %}
+
+{% block content %}
+
+    <div class="bd-header d-flex justify-content-center text-color fs-2">Basic Details</div>
+
+    <section class="d-flex justify-content-center gap-5">
+
+        <div class="basic-details d-flex justify-content-start">
+
+            <form method="post" action="{{ url_for('admin') }}" onsubmit="return confirm('Are you sure you want to submit these details?');" >
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+            <div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="firstname" type="text" class="form-control" placeholder="First Name" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg><div class="text-color">First Name</div></span>
+                </div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="lastname" type="text" class="form-control" placeholder="Last Name" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16"><path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg><div class="text-color">Last Name</div></span>
+                </div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="phone" type="tel" class="form-control" placeholder="Phone Number" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16"><path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/></svg><div class="text-color">Phone Number</div></span>
+                </div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="email" type="email" class="form-control" placeholder="Email Address" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16"><path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/><path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/></svg><div class="text-color">Email Address</div></span>
+                </div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="linkedin" type="url" class="form-control" placeholder="LinkedIn" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg><div class="text-color">LinkedIn</div></span>
+                </div>
+
+                <div class="input-group mb-3 text-color d-flex gap-2">
+                <input name="github" type="url" class="form-control" placeholder="GitHub" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                <span class="input-group-text d-flex gap-2" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" class="text-color" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg><div class="text-color">GitHub</div></span>
+                </div>
+
+            </div>
+
+            <div><input class="vjr rounded-4 p-2" type="submit" value="Submit"></div>
+        </div>
+        </form>
+
+        </div>
+
+        <div class="basic-details-fetch d-flex flex-column justify-content-center gap-3">
+            
+            <div class="d-flex justify-content-center gap-2">
+                <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >First Name</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[0]}}</div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-2">
+            <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >Last Name</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[1]}}</div></div>
+
+            <div class="d-flex justify-content-center gap-2">
+            <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >Phone</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[2]}}</div></div>
+
+            <div class="d-flex justify-content-center gap-2">
+            <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >Email</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[3]}}</div></div>
+
+            <div class="d-flex justify-content-center gap-2">
+            <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >LinkedIn</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[4]}}</div></div>
+
+            <div class="d-flex justify-content-center gap-2">
+            <div class="bd-fetch-entry vjr rounded-4 p-3 d-flex flex-column justify-content-center" >GitHub</div><div class="bd-fetch-entry git rounded-4 p-3 d-flex flex-column justify-content-center">{{basic_details[5]}}</div></div>
+        </div>
+        
+    </section>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <section id="success-message" class="d-flex justify-content-center p-3">
+                    <div class="vjr rounded-4 p-2">
+                        {{ message }}
+                    </div>
+                </section>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <section class="edu-details d-flex flex-column gap-5">
+
+        <div class="d-flex justify-content-center text-color fs-2">Educational Background</div>
+
+        <div class="d-flex justify-content-center gap-1">
+          
+            <div class="d-flex justify-content-center">
+                <form method="post" action=""{{ url_for('admin') }}>
+
+                    <div class="d-flex flex-column justify-content-center gap-3">
+                        <div class="d-flex flex-column justify-content-center gap-2 align-items-center">
+                            <span style="width: 300px; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); border: 2px solid #438B7E" class="vjr rounded-4 d-flex justify-content-center p-2">University or College Name</span>
+                            <input style="border: 2px solid #438B7E; width: 600px; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);" class="rounded-4 p-2" type="text" name="university">
+                            <div class="d-flex justify-content-center gap-3">
+                                <span class="vjr rounded-4 p-2">Degree</span>
+                                <input style="border: 2px solid #438B7E; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);" class="rounded-4 p-2" type="text" name="" id="">
+                        
+                            <span class="vjr rounded-4 p-2">Completed Year</span>
+                            <input style="border: 2px solid #438B7E; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);" class="rounded-4 p-2" type="number" name="year" min="1900" max="2100" placeholder="Year">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="vjr p-2 rounded-4" type="reset">Reset</button>
+                        <button class="vjr p-2 rounded-4" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>           
+        </div>
+    </section>
+
+    <section class="fetch-edu bd-header d-flex justify-content-center">
+
+        <div style="box-shadow: 0 10px 100px rgba(0, 0, 0, 0.15);" class="d-flex flex-column justify-content-center gap-3 p-4 rounded-5">
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">University or College</span>
+                <span class="d-flex flex-column justify-content-center git rounded-4 p-2">Will be fetched from the Database</span>
+            </div>
+            <div class="d-flex justify-content-center gap-3">
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="vjr rounded-4 p-2">Degree</span>
+                    <span class="d-flex flex-column justify-content-center git rounded-4 p-2">Will be fetched from the Database</span>
+                </div>
+                <div class="d-flex justify-content-center gap-2">
+                    <span class="vjr rounded-4 p-2">Year</span>
+                    <span class="d-flex flex-column justify-content-center git rounded-4 p-2">Will be fetched from the Database</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bd-header wrk-exp d-flex flex-column justify-content-center align-items-center gap-5">
+
+        <div class="text-color fs-2">Work Experience</div>
+
+        <section class="d-flex flex-column justify-content-center gap-2">
+            <form action="">
+                <div class="d-flex flex-column justify-content-center gap-2">
+                    <div class="d-flex justify-content-center gap-3">
+                        <span class="vjr rounded-4 p-2">Company name</span><input style="width: 500px;" class="git rounded-4 p-2" type="text" name="company_name" placeholder="Company Name">
+                    </div>
+                    <div class="d-flex justify-content-center gap-3">
+                        <span class="vjr rounded-4 p-2">Role</span><input style="width: 500px;" class="git rounded-4 p-2" type="text" name="role" placeholder="Your Job title">
+                    </div>
+                    <div class="d-flex justify-content-center gap-2">
+                        <div class="d-flex justify-content-center gap-2">
+                            <span class="vjr rounded-4 p-2">Start Year</span>
+                            <input class="git rounded-4 p-2" type="number" min="1900" max="2100" placeholder="Year" name="start_year">
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <span class="vjr rounded-4 p-2">End Year</span>
+                            <input class="git rounded-4 p-2" type="number" min="1900" max="2100" placeholder="Year"name="end_year">
+                            <span class="vjr rounded-4 p-2">Current Job</span><input type="checkbox" name="current_job">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="vjr rounded-4 p-2" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section style="box-shadow: 0 10px 100px rgba(0, 0, 0, 0.15);" class="d-flex flex-column justify-content-center gap-3 p-4 rounded-5">
+            <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Company Name</span><span class="git rounded-4 p-2 d-flex flex-column justify-content-center">Will be Fetched from the Database</span></div>
+            <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Role</span><span class="git rounded-4 p-2 d-flex flex-column justify-content-center">Will be fetched from the Database</span></div>
+            <div class="d-flex justify-content-center gap-2">
+
+                <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">From</span><span class="git rounded-4 p-2">Will be Fetched from the Database</span></div>
+
+                <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Upto</span><span class="git rounded-4 p-2">Will be Fetched from the Database</span></div>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="bd-header certi d-flex flex-column justify-content-center align-items-center gap-5">
+        
+        <div class="text-color fs-2">Certification</div>
+
+        <section class="d-flex flex-column justify-content-center gap-3">
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">Certification Name</span><input style="width: 500px;" class="git rounded-4 p-2" type="text" name="certification_name">
+
+                <span class="vjr rounded-4 p-2">With</span><input style="width: 500px;" class="git rounded-4 p-2" type="text" name="certification_with">
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">Completed</span><input class="git rounded-4 p-2" type="number" min="1900" max="2100" placeholder="Year" name="completed_year">
+            </div>
+        </section>
+
+        <section style="box-shadow: 0 10px 100px rgba(0, 0, 0, 0.15);" class="d-flex flex-column justify-content-center gap-3 p-4 rounded-5">
+
+            <div class="d-flex flex-column justify-content-center gap-2">
+                <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Certification Name</span><span class="git rounded-4 p-2">Will be Fetched from the Database</span></div>
+
+                <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Certified BY</span><span class="git rounded-4 p-2">Will be Fetched from the Database</span></div>
+
+                <div class="d-flex justify-content-center gap-2"><span class="vjr rounded-4 p-2">Certified On</span><span class="git rounded-4 p-2">Will be Fetched from the Database</span></div>
+            </div>
+
+        </section>
+
+
+    </section>
+
+    <section class="bd-header certi d-flex flex-column justify-content-center align-items-center gap-5">
+        <div class="text-color fs-2">Projects</div>
+
+        <section class="d-flex flex-column gap-3">
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">Project Name</span>
+                <input style="width: 500px;" class="git rounded-4 p-2" type="text" name="project_name">
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">GitHub URL</span>
+                <input style="width: 500px;" class="git rounded-4 p-2" type="url" name="project_url">
+            </div>
+        </section>
+
+        <section style="box-shadow: 0 10px 100px rgba(0, 0, 0, 0.15);" class="d-flex flex-column justify-content-center gap-3 p-4 rounded-5">
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">Project Name</span>
+                <span class="git rounded-4 p-2">Will be Fetched from the Database</span>
+
+            </div>
+            <div class="d-flex justify-content-center gap-2">
+                <span class="vjr rounded-4 p-2">GitHub URL</span>
+                <span class="git rounded-4 p-2">Will be Fetched from the Database</span>
+            </div>     
+        </section>
+
+    </section>
+
+<script>
+    const successMessage = document.getElementById("success-message");
+
+    if (successMessage) {
+        setTimeout(function() {
+            successMessage.remove();
+        }, 5000);
+    }
+</script>
+
+{% endblock %}

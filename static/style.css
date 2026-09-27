@@ -216,3 +216,36 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.admin{
+    padding-left: 225px;
+    padding-right: 225px;
+    text-decoration: none;
+} 
+
+.basic-details{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    padding-right: 50px;
+}
+
+.basic-details-fetch{
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 300px;
+}
+
+.bd-header{
+    padding-top: 50px;
+}
+
+input::placeholder {
+    color: #438B7E !important;
+    opacity: 1;
+    text-align: center;
+}
+
+.bd-fetch-entry{
+    height: 30px;
+}

@@ -124,4 +124,15 @@ def update_projects(name,url):
     """,(name,url))
     connection.commit()
     connection.close()
-    return "success"   
+    return "success"
+
+
+def check_access(username,password):
+    connection = sqlite3.connect("database.db")
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM account")
+    account = cursor.fetchall()
+    if username==account[0][1] and password==account[0][2]:
+        return True
+    else:
+        return False
